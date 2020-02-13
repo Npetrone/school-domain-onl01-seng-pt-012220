@@ -1,5 +1,6 @@
 class School
  
+
 attr_reader :name, :roster
   
  
@@ -22,5 +23,10 @@ def sort
     self.roster[grade] = name.sort!
   end
 end
+
+ def initialize(name)
+   @school = name
+ end
+
  
 end
